@@ -1,8 +1,9 @@
 class Solution {
     public String solution(String[] storage, int[] num) {
-        int num_item = 0;
-        String[] clean_storage = new String[storage.length];
-        int[] clean_num = new int[num.length];
+        int num_item = 0;    //현재까지 저장된 고유 항목의 수를 추적하는 변수
+        String[] clean_storage = new String[storage.length];    //storage 배열과 크기가 같음
+        int[] clean_num = new int[num.length];    //num 배열과 크기가 같음
+
         
         for(int i=0; i<storage.length; i++){
             int clean_idx = -1;
